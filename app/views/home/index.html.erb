@@ -1,3 +1,12 @@
 <h1>Strona glowna</h1>
-<p>Kategorie z miniaturami</p>
-<p>Najciekwasze artykuly z tygodnia </p>
+
+
+<ul>
+<% @books.each do |k| %>
+	<li>
+			<p><%= k.title %></p>
+			<p><%= k.description %></p>
+
+	</li>
+<% end %>
+</ul>
